@@ -158,7 +158,7 @@ export default function Example() {
 
                         <li className="mt-auto">
                           <a
-                            href="#"
+                            href="/"
                             className="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-slate-600 hover:bg-slate-50 hover:text-ube-300"
                           >
                             <Cog6ToothIcon
@@ -231,7 +231,7 @@ export default function Example() {
                 </li>
                 <li className="mt-auto">
                   <a
-                    href="#"
+                    href="/"
                     className="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-strawberry-200  hover:bg-red-50 hover:text-strawberry-300"
                   >
                     <Cog6ToothIcon

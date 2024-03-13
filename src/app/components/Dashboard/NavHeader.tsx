@@ -8,7 +8,7 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(" ");
 }
-const userNavigation = [{ name: "Sign out", href: "#" }];
+const userNavigation = [{ name: "Sign out", href: "/" }];
 
 export default function Example() {
   return (

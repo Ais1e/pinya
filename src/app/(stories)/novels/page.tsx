@@ -10,12 +10,12 @@ import { NextUIProvider } from "@nextui-org/react";
 
 export default function Home() {
   return (
-      <main className="flex flex-col justify-between w-full overflow-hidden ">
+      <main className="flex flex-col justify-between w-full pt-20">
         <HomeHeader />
         <nav className="flex flex-col py-4 2xl:px-32 xl:px-32 lg:px-12 gap-6 w-full">
           <StorySearch />
         </nav>
-        <section className="w-full flex flex-col 2xl:px-32 xl:px-32 lg:px-12 gap-6">
+        <section className="w-full flex flex-col 2xl:px-32 xl:px-32 lg:px-12 gap-6 overflow-hidden ">
           <div className="flex flex-row pt-4 gap-6">
             <div className="flex flex-col">
               <div className="flex flex-col gap-4">
@@ -40,7 +40,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col gap-6 w-full">
               <div className="flex flex-col gap-4">
-                <h1 className="text-2xl font-bold">Genre</h1>
+                <h1 className="text-2xl font-bold ">Genre</h1>
                 <GenreList />
               </div>
               <NovelList />

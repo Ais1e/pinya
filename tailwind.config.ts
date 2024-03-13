@@ -28,6 +28,7 @@ const config: Config = {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
+      
       colors: {
         'white': '#ffffff',
         'black': '#000000',
@@ -82,6 +83,12 @@ const config: Config = {
           200: '#66C8D4',
           300: '#00A4B8',
         },
+        'dark-blackberry':  {
+          50: '#6E5894',
+          100: '#2A2139',
+          200: '#1B0D33',
+          300: '#130923',
+        },
       },
       fontFamily: {
         quicksand: ['Quicksand', 'sans-serif'],
@@ -92,7 +99,9 @@ const config: Config = {
   plugins: [
     // ...
     require('@tailwindcss/forms'),
+    require('tailwind-scrollbar')({ nocompatible: true }),
     nextui(),
+    require('tailwindcss-animated')
   ],
 };
 export default config;

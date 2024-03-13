@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Genres = [
@@ -58,13 +59,13 @@ const GenreList = () => {
       
         {Genres.map((item) => (
           <div key={item.name}>
-            <a href="">
+            <Link href="#" scroll={false}>
               <div
                 className={`duration-200 ease-in-out text-base font-quicksand font-bold px-4 py-2 ${item.bg} ${item.textcolor} ${item.border} ${item.border} ${item.color} rounded-md ${item.hover}`}
               >
                 {item.name}
               </div>
-            </a>
+            </Link>
           </div>
         ))}
       </div>

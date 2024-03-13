@@ -16,9 +16,9 @@ const MainCTA = () => {
           <div className="mt-10 flex items-center justify-center gap-x-4">
             <button
               type="button"
-              className="text-white font-quicksand font-bold rounded-md bg-guava-300 px-3.5 py-2.5 text-base text-gray-900 hover:opacity-90 "
+              className="font-quicksand font-bold rounded-md bg-guava-300 px-3.5 py-2.5 text-base text-white hover:opacity-90 "
             >
-              Start Writing
+              Upload Works
             </button>
             <button
               type="button"

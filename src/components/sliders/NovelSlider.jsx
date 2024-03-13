@@ -14,6 +14,8 @@ import Image4 from "../../../public/MatchmakerPrince.png";
 import Image5 from "../../../public/ThreeLifetimes.png";
 import Image6 from "../../../public/Cultivating.png";
 
+import Link from "next/link";
+
 import { ArrowRightIcon, ArrowLeftIcon } from "@heroicons/react/24/outline";
 
 const NovelData = [
@@ -120,12 +122,22 @@ const NovelSlider = () => {
           {NovelData.map((item) => (
             <SwiperSlide key={item.title} className="mb-7">
               <div className="rounded-md overflow-hidden">
+              <Link
+                href={"/novels/AchillesBoy"}
+                className=""
+              >
                 <Image
                   src={item.backgroundImage}
                   height={750}
                   width={500}
-                  alt={item.title}
+                  alt="Picture of the author"
+                  // width={500} automatically provided
+                  // height={500} automatically provided
+                  // blurDataURL="data:..." automatically provided
+                  // placeholder="blur" // Optional blur-up while loading
                 />
+              </Link>
+              
               </div>
             </SwiperSlide>
           ))}
@@ -133,7 +145,7 @@ const NovelSlider = () => {
         <div className="flex flex-row justify-end w-full gap-4">
           {/* Custom Navigation Buttons */}
           <button
-            className="text-white font-quicksand font-bold rounded-md bg-guava-300 px-3.5 py-2.5 text-base text-white hover:opacity-90"
+            className="text-white font-quicksand font-bold rounded-md bg-guava-300 px-3.5 py-2.5 text-base hover:opacity-90"
             onClick={() => swiperRef.current.slidePrev()}
           >
             <ArrowLeftIcon className="h-5 w-5" />

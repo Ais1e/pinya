@@ -4,18 +4,18 @@ import MainCTA from "@/components/cta/MainCTA";
 import GenreList from "@/components/list/GenreList";
 import NovelSlider from "@/components/sliders/NovelSlider";
 import Footer from "@/components/footer/Footer";
-
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between w-full overflow-hidden">
+    <main className="flex flex-col items-center justify-between w-full pt-20">
       <HomeHeader />
-      <section className="flex flex-col w-full">
+      <section className="flex flex-col w-full overflow-hidden ">
         <MainSlider />
         <MainCTA />
         <div className="flex flex-col gap-6">
           <section className="flex flex-col py-4 2xl:px-32 xl:px-32 lg:px-12 gap-6">
-            <div className="flex flex-wrap relative font-bold font-quicksand md:text-md lg:text-2xl flex flex-row items-center gap-2">
+            <div className="flex flex-wrap relative font-bold font-quicksand md:text-md lg:text-2xl flex-row items-center gap-2">
               <div className="pr-4">Genre</div>
               <GenreList></GenreList>
             </div>
@@ -42,7 +42,7 @@ export default function Home() {
               </div>
               <button
                 type="button"
-                className="text-blackberry-300 border-2 border-blackberry-300 font-quicksand font-bold rounded-md bg-white px-3.5 py-2.5 text-base font-semibold shadow-sm hover:bg-blackberry-300 hover:text-white"
+                className="text-blackberry-300 border-2 border-blackberry-300 font-quicksand rounded-md bg-white px-3.5 py-2.5 text-base font-semibold shadow-sm hover:bg-blackberry-300 hover:text-white"
               >
                 View All
               </button>
@@ -70,7 +70,7 @@ export default function Home() {
               </div>
               <button
                 type="button"
-                className="text-blackberry-300 border-2 border-blackberry-300 font-quicksand font-bold rounded-md bg-white px-3.5 py-2.5 text-base font-semibold shadow-sm hover:bg-blackberry-300 hover:text-white"
+                className="text-blackberry-300 border-2 border-blackberry-300 font-quicksand rounded-md bg-white px-3.5 py-2.5 text-base font-semibold shadow-sm hover:bg-blackberry-300 hover:text-white"
               >
                 View All
               </button>
@@ -78,7 +78,7 @@ export default function Home() {
             <NovelSlider />
           </section>
           <section className="flex flex-col py-4 2xl:px-32 xl:px-32 lg:px-12 gap-6">
-            <div className="flex-wrap relative font-bold flex flex-row items-center gap-2 w-full justify-between">
+            <div className="flex-wrap relative font-semibold flex flex-row items-center gap-2 w-full justify-between">
               <div className="flex flex-row items-center gap-2">
                 <div className="font-quicksand md:text-md lg:text-2xl">
                   Recently Updated
@@ -119,12 +119,13 @@ export default function Home() {
                   resonate.
                 </p>
                 <div className="mt-10 flex items-center justify-center gap-x-4">
-                  <button
-                    type="button"
-                    className="text-white font-quicksand font-bold rounded-md bg-blackberry-300 px-3.5 py-2.5 text-base text-gray-900 hover:opacity-90 "
+                  <Link
+                    href={"https://www.studiopinya.com/contact"}
+                    target="_blank"
+                    className="text-white font-quicksand font-bold rounded-md bg-blackberry-300 px-3.5 py-2.5 text-base hover:opacity-90"
                   >
                     Contact our Studio
-                  </button>
+                  </Link>
                 </div>
                 <svg
                   viewBox="0 0 1024 1024"
@@ -145,7 +146,7 @@ export default function Home() {
         </div>
       </section>
       <div className="mt-12">
-      <Footer />
+        <Footer />
       </div>
     </main>
   );

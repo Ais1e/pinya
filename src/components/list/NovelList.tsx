@@ -7,184 +7,8 @@ import {
   BookOpenIcon,
 } from "@heroicons/react/24/outline";
 import Image from "next/image";
-
-import Image1 from "../../../public/AchillesBoy.png";
-import Image2 from "../../../public/HellsConsort.png";
-import Image3 from "../../../public/HusbandsPastLives.png";
-import Image4 from "../../../public/MatchmakerPrince.png";
-import Image5 from "../../../public/ThreeLifetimes.png";
-import Image6 from "../../../public/Cultivating.png";
-
-const Novels = [
-  {
-    name: "Achilles and the Boy Next Door",
-    views: "12k",
-    likes: "16k",
-    saves: "23k",
-    genre: {
-      name: "Romance",
-    },
-    href: "#",
-    discription:
-      "Myong Lina is an outstanding career-driven woman from the 22nd century, and is the epitome of success. However, there is one thing she lacks: LOVE. With numerous failed past relationships, and almost hitting the big 3-0, she decides that maybe she should ask a fortune teller for help with her love life, as crazy as that sounds. Perhaps her problem doesn’t lie in the present, but in the past?",
-    img: Image1,
-    chapters: 200,
-  },
-  {
-    name: "Hells Consort",
-    views: "12k",
-    likes: "16k",
-    saves: "23k",
-    genre: {
-      name: "Romance",
-    },
-    href: "#",
-    discription:
-      "Myong Lina is an outstanding career-driven woman from the 22nd century, and is the epitome of success. However, there is one thing she lacks: LOVE. With numerous failed past relationships, and almost hitting the big 3-0, she decides that maybe she should ask a fortune teller for help with her love life, as crazy as that sounds. Perhaps her problem doesn’t lie in the present, but in the past?",
-    img: Image2,
-    chapters: 100,
-  },
-  {
-    name: "HusbandsPastLives",
-    views: "12k",
-    likes: "16k",
-    saves: "23k",
-    genre: {
-      name: "Romance",
-    },
-    href: "#",
-    discription:
-      "Myong Lina is an outstanding career-driven woman from the 22nd century, and is the epitome of success. However, there is one thing she lacks: LOVE. With numerous failed past relationships, and almost hitting the big 3-0, she decides that maybe she should ask a fortune teller for help with her love life, as crazy as that sounds. Perhaps her problem doesn’t lie in the present, but in the past?",
-    img: Image3,
-    chapters: 99,
-  },
-  {
-    name: "MatchmakerPrince",
-    views: "12k",
-    likes: "16k",
-    saves: "23k",
-    genre: {
-      name: "Romance",
-    },
-    href: "#",
-    discription:
-      "Myong Lina is an outstanding career-driven woman from the 22nd century, and is the epitome of success. However, there is one thing she lacks: LOVE. With numerous failed past relationships, and almost hitting the big 3-0, she decides that maybe she should ask a fortune teller for help with her love life, as crazy as that sounds. Perhaps her problem doesn’t lie in the present, but in the past?",
-    img: Image4,
-    chapters: 50,
-  },
-  {
-    name: "ThreeLifetimes",
-    views: "12k",
-    likes: "16k",
-    saves: "23k",
-    genre: {
-      name: "Romance",
-    },
-    href: "#",
-    discription:
-      "Myong Lina is an outstanding career-driven woman from the 22nd century, and is the epitome of success. However, there is one thing she lacks: LOVE. With numerous failed past relationships, and almost hitting the big 3-0, she decides that maybe she should ask a fortune teller for help with her love life, as crazy as that sounds. Perhaps her problem doesn’t lie in the present, but in the past?",
-    img: Image5,
-    chapters: 78,
-  },
-  {
-    name: "Cultivating",
-    views: "12k",
-    likes: "16k",
-    saves: "23k",
-    genre: {
-      name: "Romance",
-    },
-    href: "#",
-    discription:
-      "Myong Lina is an outstanding career-driven woman from the 22nd century, and is the epitome of success. However, there is one thing she lacks: LOVE. With numerous failed past relationships, and almost hitting the big 3-0, she decides that maybe she should ask a fortune teller for help with her love life, as crazy as that sounds. Perhaps her problem doesn’t lie in the present, but in the past?",
-    img: Image6,
-    chapters: 100,
-  },
-  {
-    name: "Achilles and the Boy Next Door",
-    views: "12k",
-    likes: "16k",
-    saves: "23k",
-    genre: {
-      name: "Romance",
-    },
-    href: "#",
-    discription:
-      "Myong Lina is an outstanding career-driven woman from the 22nd century, and is the epitome of success. However, there is one thing she lacks: LOVE. With numerous failed past relationships, and almost hitting the big 3-0, she decides that maybe she should ask a fortune teller for help with her love life, as crazy as that sounds. Perhaps her problem doesn’t lie in the present, but in the past?",
-    img: Image1,
-    chapters: 40,
-  },
-  {
-    name: "Hells Consort",
-    views: "12k",
-    likes: "16k",
-    saves: "23k",
-    genre: {
-      name: "Romance",
-    },
-    href: "#",
-    discription:
-      "Myong Lina is an outstanding career-driven woman from the 22nd century, and is the epitome of success. However, there is one thing she lacks: LOVE. With numerous failed past relationships, and almost hitting the big 3-0, she decides that maybe she should ask a fortune teller for help with her love life, as crazy as that sounds. Perhaps her problem doesn’t lie in the present, but in the past?",
-    img: Image2,
-    chapters: 40,
-  },
-  {
-    name: "HusbandsPastLives",
-    views: "12k",
-    likes: "16k",
-    saves: "23k",
-    genre: {
-      name: "Romance",
-    },
-    href: "#",
-    discription:
-      "Myong Lina is an outstanding career-driven woman from the 22nd century, and is the epitome of success. However, there is one thing she lacks: LOVE. With numerous failed past relationships, and almost hitting the big 3-0, she decides that maybe she should ask a fortune teller for help with her love life, as crazy as that sounds. Perhaps her problem doesn’t lie in the present, but in the past?",
-    img: Image3,
-    chapters: 100,
-  },
-  {
-    name: "MatchmakerPrince",
-    views: "12k",
-    likes: "16k",
-    saves: "23k",
-    genre: {
-      name: "Romance",
-    },
-    href: "#",
-    discription:
-      "Myong Lina is an outstanding career-driven woman from the 22nd century, and is the epitome of success. However, there is one thing she lacks: LOVE. With numerous failed past relationships, and almost hitting the big 3-0, she decides that maybe she should ask a fortune teller for help with her love life, as crazy as that sounds. Perhaps her problem doesn’t lie in the present, but in the past?",
-    img: Image4,
-    chapters: 300,
-  },
-  {
-    name: "ThreeLifetimes",
-    views: "12k",
-    likes: "16k",
-    saves: "23k",
-    genre: {
-      name: "Romance",
-    },
-    href: "#",
-    discription:
-      "Myong Lina is an outstanding career-driven woman from the 22nd century, and is the epitome of success. However, there is one thing she lacks: LOVE. With numerous failed past relationships, and almost hitting the big 3-0, she decides that maybe she should ask a fortune teller for help with her love life, as crazy as that sounds. Perhaps her problem doesn’t lie in the present, but in the past?",
-    img: Image5,
-    chapters: 11,
-  },
-  {
-    name: "Cultivating",
-    views: "12k",
-    likes: "16k",
-    saves: "23k",
-    genre: {
-      name: "Romance",
-    },
-    href: "#",
-    discription:
-      "Myong Lina is an outstanding career-driven woman from the 22nd century, and is the epitome of success. However, there is one thing she lacks: LOVE. With numerous failed past relationships, and almost hitting the big 3-0, she decides that maybe she should ask a fortune teller for help with her love life, as crazy as that sounds. Perhaps her problem doesn’t lie in the present, but in the past?",
-    img: Image6,
-    chapters: 89,
-  },
-];
+import Novels from "@/data/novelsData"
+import Link from "next/link";
 
 const NovelList = () => {
   return (
@@ -201,10 +25,10 @@ const NovelList = () => {
             />
             <div className="flex flex-col gap-2">
               <h1 className="font-bold text-lg hover:underline">
-                <a href={novels.href}>{novels.name}</a>
+                <Link href={`novels/${novels.href}`}>{novels.name}</Link>
               </h1>
               <div className="flex flex-row gap-2">
-                <div className="flex flex-row gap-1 font-medium text-ube-300 flex-row">
+                <div className="flex gap-1 font-medium text-ube-300 flex-row">
                   <p>{novels.views}</p>
                   <EyeIcon className="h-6 w-6" />
                 </div>
@@ -228,7 +52,7 @@ const NovelList = () => {
                 </div>
               </div>
               <div className="text-base text-blackberry-300 font-semibold font-quicksand line-clamp-3">
-                {novels.discription}
+                {novels.description}
               </div>
               <div className="flex flex-row gap-1 font-bold">
                 <BookOpenIcon className="h-6 w-6 mr-1" />

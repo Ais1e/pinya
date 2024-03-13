@@ -9,7 +9,7 @@ const StorySearch = () => {
           <MagnifyingGlassIcon className="w-8 h-8" />
           <input
             id="search-field"
-            className="pl-12 block h-full w-full border-0 py-0 pl-2 pr-0 text-gray-900 placeholder:text-gray-400 focus:ring-0 "
+            className="block h-full w-full border-0 py-0 pl-2 pr-0 text-gray-900 placeholder:text-gray-400 focus:ring-0 "
             placeholder="Search..."
             type="search"
             name="search"
