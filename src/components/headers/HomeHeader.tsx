@@ -35,7 +35,7 @@ const genres = [
     name: "Romance",
     description:
       "Heartfelt stories of love and relationships that capture the complexities of the human heart.",
-    href: "#",
+    href: "/genre/romance",
     icon: HeartIcon,
     bghoverColor: "bg-red-50",
     hoverColor: "group-hover:text-pink-500",

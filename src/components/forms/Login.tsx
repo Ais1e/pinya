@@ -15,7 +15,7 @@ export default function Login() {
         ```
       */}
       <div className="flex min-h-full">
-        <div className="relative hidden w-0 flex-1 lg:block w-1/2">
+        <div className="relative hidden flex-1 lg:block w-1/2">
           <img
             className="absolute inset-0 h-full w-full object-cover"
             src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e82c2197-0087-4cca-9a4e-c3ffb2f1fcde/dgrb9nq-ea8c918d-1071-4468-a439-3d10b6c30f63.png/v1/fill/w_1920,h_919,q_80,strp/sunset_in_space__2_by_digitaldimensions51_dgrb9nq-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2U4MmMyMTk3LTAwODctNGNjYS05YTRlLWMzZmZiMmYxZmNkZVwvZGdyYjlucS1lYThjOTE4ZC0xMDcxLTQ0NjgtYTQzOS0zZDEwYjZjMzBmNjMucG5nIiwiaGVpZ2h0IjoiPD05MTkiLCJ3aWR0aCI6Ijw9MTkyMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC9lODJjMjE5Ny0wMDg3LTRjY2EtOWE0ZS1jM2ZmYjJmMWZjZGVcL2RpZ2l0YWxkaW1lbnNpb25zNTEtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.HX_Abn0bc2YuGwcp-chNQn5gMphc_11yt6oQEe5wOec"
